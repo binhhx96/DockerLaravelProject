@@ -1,5 +1,8 @@
 FROM php:7.3-fpm
 
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 # Copy composer.lock and composer.json
 COPY composer.lock composer.json /var/www/
 
