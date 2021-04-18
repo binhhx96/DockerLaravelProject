@@ -27,5 +27,5 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::post('signin', [APIController::class, 'login']);
 Route::group(['middleware' => 'auth.jwt'], function () {
 	Route::get('signout', [APIController::class, 'logout']);
-	Route::get('users', [UserController::class, 'index']);
+	Route::get('user/me', [UserController::class, 'index']);
 });

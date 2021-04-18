@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/BlogProject.iml" filepath="$PROJECT_DIR$/.idea/BlogProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../homecca-project/.idea/homecca-project.iml" filepath="$PROJECT_DIR$/../homecca-project/.idea/homecca-project.iml" />
     </modules>
   </component>
 </project>
