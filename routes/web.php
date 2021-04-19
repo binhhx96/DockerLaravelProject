@@ -24,8 +24,11 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::post('signin', [APIController::class, 'login']);
-Route::group(['middleware' => 'auth.jwt'], function () {
-	Route::get('signout', [APIController::class, 'logout']);
-	Route::get('user/me', [UserController::class, 'index']);
+Route::group(['prefix' => 'api', 'middleware' => 'cors'], function () {
+    Route::post('signin', [APIController::class, 'login']);
+
+    Route::group(['middleware' => 'auth.jwt'], function () {
+        Route::get('signout', [APIController::class, 'logout']);
+        Route::get('user/me', [UserController::class, 'index']);
+    });
 });
