@@ -23,6 +23,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/user/all', [UserController::class, 'getAllUser'])->name('all_user');
 
 Route::group(['prefix' => 'api', 'middleware' => 'cors'], function () {
     Route::post('signin', [APIController::class, 'login']);

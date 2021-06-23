@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd498974-8ce6-488e-9ea4-5c047cb845a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CorMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Entities/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Entities/Repositories/AbstractRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Entities/Repositories/AbstractRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Entities/Repositories/User/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Entities/Repositories/User/UserRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/UserService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,6 +185,16 @@
       <path value="$PROJECT_DIR$/vendor/namshi/jose" />
       <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
       <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -257,20 +272,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Web_Chat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Entities/Models" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\ABC\DockerLaravelProject\app\Entities\Models" />
+      <recent name="C:\Users\Admin\Desktop\ABC\homecca-project\webpack" />
+      <recent name="C:\Users\Admin\Desktop\ABC\homecca-project\src\constants\env" />
+      <recent name="C:\Users\Admin\Desktop\ABC\homecca-project\scripts" />
       <recent name="C:\Users\Admin\Desktop\ABC\homecca-project\src\Pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\ABC\DockerLaravelProject\app\Entities\Repositories\User" />
       <recent name="C:\Users\Admin\Desktop\ABC\homecca-project" />
     </key>
   </component>
@@ -303,7 +326,12 @@
       <workItem from="1618713788565" duration="39000" />
       <workItem from="1618714351466" duration="4728000" />
       <workItem from="1618719218958" duration="2267000" />
-      <workItem from="1618841944766" duration="6506000" />
+      <workItem from="1618841944766" duration="6581000" />
+      <workItem from="1619235009628" duration="3604000" />
+      <workItem from="1624368329416" duration="22000" />
+      <workItem from="1624372331080" duration="159000" />
+      <workItem from="1624373002946" duration="3262000" />
+      <workItem from="1624453310025" duration="3512000" />
     </task>
     <servers />
   </component>
